@@ -1,0 +1,64 @@
+.page {
+  position: relative;
+  min-width: 20px;
+  min-height: 100%;
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 25px 0 15px;
+  background-color: #fff;
+  letter-spacing: .5px;
+
+  & > *:not(.scroll-bar) {
+    position: relative;
+    margin: 5px 0 0 0;
+    font: 12px ss;
+  }
+
+  & > *:last-child {
+    margin-bottom: 25px;
+  }
+
+  & > .heading,
+  & > .note {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  & > .note {
+    padding-left: 17px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      background-image: url('../../../images/windows/notes.png');
+    }
+  }
+
+  & .ordered,
+  & .unordered {
+    padding-left: 12px;
+
+    & > * {
+      margin-top: 5px;
+      padding-left: 7px;
+
+      & > * {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  & .ordered {
+    list-style: decimal;
+  }
+
+  & .unordered {
+    list-style: disc;
+  }
+}

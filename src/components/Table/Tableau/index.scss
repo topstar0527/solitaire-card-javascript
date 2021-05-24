@@ -1,0 +1,22 @@
+.tableau {
+  background-color: #008200;
+
+  &.inverted {
+    filter: invert(1);
+  }
+
+  .card {
+    &.closed {
+      & > .opened,
+      & > .closed {
+        margin-top: 3px;
+      }
+    }
+
+    &.opened {
+      & > .opened {
+        margin-top: 15px;
+      }
+    }
+  }
+}

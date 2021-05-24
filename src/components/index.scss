@@ -1,0 +1,75 @@
+@import './cursors.scss';
+
+@font-face {
+  font-family: console;
+  src:
+    url('../fonts/console.eot') format('embedded-opentype'),
+    url('../fonts/console.svg') format('svg'),
+    url('../fonts/console.ttf') format('truetype'),
+    url('../fonts/console.woff') format('woff'),
+    url('../fonts/console.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: fixedsys;
+  src:
+    url('../fonts/fixedsys.eot') format('embedded-opentype'),
+    url('../fonts/fixedsys.svg') format('svg'),
+    url('../fonts/fixedsys.ttf') format('truetype'),
+    url('../fonts/fixedsys.woff') format('woff'),
+    url('../fonts/fixedsys.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: tahoma;
+  src:
+    url('../fonts/tahoma.eot') format('embedded-opentype'),
+    url('../fonts/tahoma.svg') format('svg'),
+    url('../fonts/tahoma.ttf') format('truetype'),
+    url('../fonts/tahoma.woff') format('woff'),
+    url('../fonts/tahoma.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: ss;
+  src:
+    url('../fonts/ss.eot') format('embedded-opentype'),
+    url('../fonts/ss.svg') format('svg'),
+    url('../fonts/ss.ttf') format('truetype'),
+    url('../fonts/ss.woff') format('woff'),
+    url('../fonts/ss.woff2') format('woff2');
+}
+
+.root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: fixed url('../images/wallpaper.png') center no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  cursor: url($default), default;
+
+  &.progress {
+    cursor: url($progress), progress;
+  }
+
+  &.ew-resize {
+    cursor: url($ew-resize), ew-resize;
+  }
+
+  &.nesw-resize {
+    cursor: url($nesw-resize), nesw-resize;
+  }
+
+  &.ns-resize {
+    cursor: url($ns-resize), ns-resize;
+  }
+
+  &.nwse-resize {
+    cursor: url($nwse-resize), nwse-resize;
+  }
+
+  &.wait {
+    cursor: url($wait), wait;
+  }
+}

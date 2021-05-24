@@ -1,0 +1,79 @@
+.menu-bar {
+  position: relative;
+  width: 100%;
+  height: 19px;
+  border-bottom: 1px solid #fff;
+}
+
+.window.inactive {
+  .menu-bar {
+    color: #a9a699;
+  }
+}
+
+.menu-category {
+  position: relative;
+  display: inline-block;
+  top: -1px;
+  height: 19px;
+  padding: 0 6px;
+  font: 11px tahoma;
+  line-height: 19px;
+}
+
+.menu-category.hovered,
+.menu-category.showing,
+.menu-item:hover {
+  background-color: #326ac3;
+  color: #fff;
+}
+
+.showing {
+  .drop-down-menu {
+    display: block;
+  }
+}
+
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 2px;
+  background-color: #fff;
+  border: 1px solid #adaa9c;
+  color: #000;
+  z-index: 69;
+
+  hr {
+    height: 1px;
+    background: #adaa9c;
+    border: none;
+    margin: 5px 0;
+  }
+}
+
+.drop-down-menu.game {
+  width: 135px;
+}
+
+.drop-down-menu.help {
+  width: 192px;
+}
+
+.menu-item {
+  line-height: 17px;
+  position: relative;
+  box-sizing: border-box;
+  height: 17px;
+  padding: 0 17px;
+  margin: 0;
+
+  *:last-child {
+    position: absolute;
+    right: 17px;
+  }
+
+  &.disabled {
+    color: #a9a699;
+  }
+}
